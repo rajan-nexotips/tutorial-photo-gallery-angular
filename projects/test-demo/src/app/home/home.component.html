@@ -1,0 +1,79 @@
+<header class="text-gray-600 body-font">
+  <div
+    class="w-screen mx-auto flex flex-wrap px-4 py-2 flex-col md:flex-row items-center"
+  >
+    <a
+      class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+    >
+      <span class="ml-3 text-xl"
+        >MyTrade<span class="text-primary">Wall</span>
+      </span>
+    </a>
+    <nav
+      class="md:mr-auto xxl:ml-4 md:py-1 xl:pl-12 md:pl-5 flex flex-wrap items-center justify-center"
+    >
+      <a
+        routerLink="stockTips"
+        [routerLinkActive]="'stockTips'"
+        class="xxl:mr-4 hover:text-primary hover:bg-primary-dark px-3 mr-2 py-1.5 rounded font-semibold"
+        >Stocks Tips</a
+      >
+      <a
+        class="xxl:mr-4 hover:text-primary hover:bg-primary-dark px-3 mr-2 py-1.5 rounded font-semibold"
+        >Portfolio</a
+      >
+      <a
+        class="xxl:mr-4 hover:text-primary hover:bg-primary-dark px-3 mr-2 py-1.5 rounded font-semibold"
+        >Social</a
+      >
+      <a
+        class="xxl:mr-4 hover:text-primary hover:bg-primary-dark px-3 mr-2 py-1.5 rounded font-semibold"
+        >Watchlist</a
+      >
+      <a
+        class="xxl:mr-4 hover:text-primary hover:bg-primary-dark px-3 mr-2 py-1.5 rounded font-semibold"
+        >MyChart</a
+      >
+      <a
+        class="xxl:mr-4 hover:text-primary hover:bg-primary-dark px-3 py-1.5 rounded font-semibold"
+        >Screener</a
+      >
+    </nav>
+
+    <form class="flex items-center">
+      <label for="simple-search" class="sr-only">Search</label>
+      <div class="relative w-82">
+        <div
+          class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+        >
+          <svg
+            aria-hidden="true"
+            class="w-5 h-5 text-border-color dark:text-border-color"
+            fill="border-color"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              class="search-icon"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+        <input
+          type="text"
+          id="simple-search"
+          class="bg-gray-50 w-full border-border-color border-3 text-sm rounded py-2 px-4 focus:border-border-color block pl-10 dark:bg-border-color dark:border-border-color dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Search Any Stock or Analyst in your mind"
+          required
+        />
+      </div>
+    </form>
+    <button
+      class="bg-transparent hover:bg-blue-500 ml-3 text-primary hover:bg-primary-dark font-semibold hover:text-white py-1.5 px-4 border-3 border-text-primary hover:border-transparent rounded"
+    >
+      Log in/Sign Up
+    </button>
+  </div>
+</header>
